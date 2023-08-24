@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 //import styles from '@/styles/Home.module.css'
 import { Container,Box,Typography,Card,CssBaseline } from '@mui/material'
+import Title from "@/screens/Title/Title";
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,20 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-      <CssBaseline />
-      <Container style={{marginTop: "5rem",textAlign: "left"}}>
-      <Typography variant='h2'sx={{textAlign: "left",fontWeight: "900"}}>
-        Welcome to 
-        <br /> StudySync
-      </Typography>
-      <Typography variant='h5'sx={{fontWeight: "300",mt: "1rem"}}>
-        The lectures app
-      </Typography>
-      <img src='bg-image.svg' style={{float: "right"}} />
-      </Container>
-    </main>
-
+        <Title/>
     </>
   )
 }
